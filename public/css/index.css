@@ -1,0 +1,45 @@
+:root{
+    --bgColor: #202632;
+    --divBgColor: #313A49;
+    --adviceIdColor: #53FFAB;
+    --iconDiceBgColor: #53FFAB;
+    --mainColor: #ffffff;
+    --mainFont: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+    color: var(--mainColor);
+    font-family: var(--mainFont);
+}
+
+.advice-id{
+    color: var(--adviceIdColor);
+}
+
+.main{
+    background-color: var(--divBgColor);
+    border-radius: 30px;
+    position: absolute;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 350px;
+}
+
+.icon-dice img{
+    background-color: var(--iconDiceBgColor);
+    padding: 20px;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.icon-dice :hover{
+    box-shadow: 0 5px 40px 20px var(--iconDiceBgColor);
+}
